@@ -1,0 +1,182 @@
+{
+  "common": {
+    "brandName": "MaisonDeLUX",
+    "tagline": "L'intelligence prédictive de valorisation immobilière au Maroc",
+    "estimateCta": "Estimer mon bien",
+    "back": "Retour",
+    "continue": "Continuer",
+    "finish": "Lancer l'évaluation",
+    "edit": "Modifier",
+    "reset": "Nouvelle estimation",
+    "close": "Fermer",
+    "loading": "Calcul en cours...",
+    "offlineNotice": "Moteur en cours de connexion",
+    "allRightsReserved": "Tous droits réservés.",
+    "morocco": "Maroc"
+  },
+  "nav": {
+    "territories": "Territoires",
+    "process": "Démarche",
+    "whyUs": "Pourquoi MaisonDeLUX",
+    "methodology": "Transparence",
+    "faq": "FAQ",
+    "estimate": "Estimer mon bien"
+  },
+  "hero": {
+    "badge": "PropTech Marocaine · Intelligence Prédictive",
+    "title": "Quelle est la valeur de votre bien ?",
+    "subtitle": "Une infrastructure algorithmique dédiée à la valorisation immobilière au Maroc. Modélisation multi-critères, calibrage géographique et rigueur statistique.",
+    "primaryCta": "Estimer mon bien",
+    "secondaryCta": "Découvrir la démarche",
+    "quickStart": {
+      "title": "Initialiser une estimation",
+      "cityLabel": "Ville",
+      "cityPlaceholder": "Sélectionnez une agglomération...",
+      "surfaceLabel": "Surface estimée",
+      "surfacePlaceholder": "ex: 95 m²",
+      "action": "Démarrer"
+    }
+  },
+  "explorer": {
+    "badge": "Ancrage Géographique",
+    "title": "Où se trouve votre bien ?",
+    "subtitle": "Explorez les agglomérations urbaines intégrées au référentiel de données MaisonDeLUX. Sélectionnez un territoire pour initier une évaluation contextualisée.",
+    "searchPlaceholder": "Rechercher une ville...",
+    "filterAll": "Toutes",
+    "filterActive": "Périmètre modélisé",
+    "activeNotice": "Périmètre de données actif",
+    "estimateInCity": "Estimer dans cette ville",
+    "noResults": "Aucune agglomération correspondante trouvée."
+  },
+  "howItWorks": {
+    "badge": "Parcours d'Évaluation",
+    "title": "Une démarche architecturale en trois temps",
+    "subtitle": "Chaque estimation repose sur une séquence structurée, éliminant les intuitions arbitraires au profit d'une analyse rigoureuse.",
+    "step1Number": "01",
+    "step1Title": "Qualification architecturale",
+    "step1Desc": "Collecte structurée des caractéristiques intrinsèques du bien : implantation urbaine, métré habitable, agencement spatial et finitions.",
+    "step2Number": "02",
+    "step2Title": "Calibrage algorithmique",
+    "step2Desc": "Mise en correspondance des paramètres avec les séries statistiques auditées et nettoyées du marché local sans extrapolation hasardeuse.",
+    "step3Number": "03",
+    "step3Title": "Restitution & Intervalle",
+    "step3Desc": "Génération de la valeur indicative, de l'encadrement de confiance et du ratio métrique conforme au modèle d'évaluation."
+  },
+  "whyMaisonDeLux": {
+    "badge": "Rigueur Algorithmique",
+    "title": "La modélisation scientifique face aux estimations empiriques",
+    "subtitle": "Une approche d'ingénierie immobilière conçue pour offrir un niveau d'exigence et de neutralité sans équivalent.",
+    "points": [
+      {
+        "title": "Modélisation Multi-Dimensionnelle",
+        "description": "Là où un calcul traditionnel applique un ratio moyen au mètre carré, nos modèles croisent simultanément typologie, surface, micro-localisation et attributs constructifs."
+      },
+      {
+        "title": "Données Auditées & Nettoyées",
+        "description": "Chaque observation alimentant le moteur fait l'objet d'une élimination rigoureuse des doublons, des prix aberrants et des incohérences déclaratives."
+      },
+      {
+        "title": "Neutralité Absolue",
+        "description": "Aucune surévaluation promotionnelle ni incitation transactionnelle. L'évaluation est guidée par l'observation empirique et la reproductibilité des calculs."
+      }
+    ]
+  },
+  "trust": {
+    "badge": "Transparence Méthodologique",
+    "title": "Éthique des données et périmètre scientifique",
+    "subtitle": "La confiance se bâtit sur la franchise des hypothèses et l'honnêteté des limites techniques.",
+    "pillars": [
+      {
+        "title": "Périmètre de Modélisation Ciblé",
+        "description": "Le moteur de prédiction est actuellement entraîné sur le segment des appartements résidentiels à la vente. Les autres typologies (villas, duplex, terrains) sont en cours d'audit et ne sont pas simulées artificiellement."
+      },
+      {
+        "title": "Prix d'Offre vs. Actes Notariés",
+        "description": "Nos observations reflètent la réalité des annonces réelles du marché marocain. Elles constituent un repère économique solide mais ne se substituent pas à une expertise notariale formelle."
+      },
+      {
+        "title": "Zéro Falsification Statistique",
+        "description": "Les secteurs géographiques non audités demeurent déclarés hors périmètre. Nous ne présentons aucune fausse statistique régionale ni taux de précision imaginaire."
+      }
+    ]
+  },
+  "faq": {
+    "badge": "Éclairages",
+    "title": "Questions fréquentes",
+    "subtitle": "Réponses claires sur notre infrastructure de valorisation immobilière.",
+    "items": [
+      {
+        "question": "Comment MaisonDeLUX calcule-t-il la valeur d'un bien ?",
+        "answer": "MaisonDeLUX utilise un ensemble d'algorithmes de régression entraînés sur des données de marché marocain auditées. Le modèle analyse conjointement la localisation, la surface, le nombre de pièces, de chambres, et les prestations pour dégager une estimation cohérente."
+      },
+      {
+        "question": "Pourquoi le modèle se concentre-t-il actuellement sur les appartements ?",
+        "answer": "Pour garantir une rigueur statistique maximale, nous ne déployons des modèles que sur les typologies dont le volume de données nettoyées est suffisant. Le segment des appartements constitue la base la plus dense et éprouvée de notre pipeline actuel."
+      },
+      {
+        "question": "Mes données personnelles sont-elles requises pour estimer un bien ?",
+        "answer": "Non. L'estimation est accessible sans création de compte obligatoire ni saisie d'informations nominatives. Seules les caractéristiques techniques du bien sont transmises au moteur de calcul."
+      },
+      {
+        "question": "Que se passe-t-il si le serveur de prédiction est hors ligne ?",
+        "answer": "MaisonDeLUX applique une politique stricte d'honnêteté : aucun prix n'est inventé côté navigateur. Si le serveur de calcul est en cours de déploiement ou indisponible, l'interface affiche explicitement cet état."
+      }
+    ]
+  },
+  "estimation": {
+    "pageTitle": "Estimateur Immobilier",
+    "pageSubtitle": "Processus d'évaluation structuré en 5 étapes",
+    "step1": "Localisation",
+    "step2": "Bien",
+    "step3": "Caractéristiques",
+    "step4": "Vérification",
+    "step5": "Résultat",
+    "cityLabel": "Ville du bien",
+    "cityHelp": "Sélectionnez une agglomération auditée.",
+    "districtLabel": "Quartier ou secteur",
+    "districtPlaceholder": "Ex : Guéliz, Maârif, Agdal...",
+    "districtHelp": "Indiquez le quartier exact ou laissez vide si inconnu.",
+    "propertyTypeTitle": "Typologie du bien",
+    "propertyTypeNotice": "Périmètre actif : appartements résidentiels en vente",
+    "surfaceLabel": "Surface habitable (m²)",
+    "surfaceHelp": "Surface nette de plancher.",
+    "roomsLabel": "Nombre total de pièces",
+    "bedroomsLabel": "Chambres à coucher",
+    "bathroomsLabel": "Salles de bain",
+    "standingLabel": "Prestation haut standing",
+    "reviewTitle": "Récapitulatif des caractéristiques",
+    "reviewNotice": "Vérifiez l'exactitude des paramètres saisis avant transmission au moteur prédictif.",
+    "cityField": "Ville",
+    "districtField": "Quartier",
+    "typeField": "Typologie",
+    "surfaceField": "Surface",
+    "roomsField": "Pièces",
+    "bedroomsField": "Chambres",
+    "bathroomsField": "Salles de bain",
+    "standingField": "Haut standing",
+    "yes": "Oui",
+    "no": "Non",
+    "notSpecified": "Non spécifié",
+    "calculateCta": "Transmettre au moteur d'évaluation",
+    "result": {
+      "title": "Valorisation Estimée",
+      "priceLabel": "Prix indicatif estimé",
+      "rangeLabel": "Fourchette d'estimation",
+      "pricePerM2Label": "Prix au m² indicatif",
+      "modelInfo": "Source de calcul",
+      "confidenceNotice": "L'encadrement dépend de la dispersion observée sur des biens comparables dans le secteur.",
+      "offlineTitle": "Moteur d'évaluation en cours de connexion",
+      "offlineMessage": "Le service de prédiction ML est actuellement en cours de démarrage ou de recalibrage. Conformément à nos engagements de rigueur, aucun prix approximatif n'est fabriqué en local.",
+      "offlineSubtext": "Dès que le backend local ou distant est opérationnel, relancez l'évaluation pour obtenir la prédiction exacte du modèle.",
+      "retry": "Réessayer la connexion"
+    }
+  },
+  "footer": {
+    "brandDescription": "Plateforme d'intelligence prédictive dédiée à la valorisation immobilière au Maroc. Conçue avec une exigence architecturale et mathématique.",
+    "navigationTitle": "Navigation",
+    "legalTitle": "Méthodologie & Cadre",
+    "legalNote": "Les estimations générées sont fournies à titre strictement indicatif et statistique. Elles ne constituent ni une offre contractuelle ni une expertise légale d'évaluation.",
+    "dataSource": "Données du marché immobilier marocain auditées et documentées.",
+    "localeSwitch": "Langue d'affichage"
+  }
+}

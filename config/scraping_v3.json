@@ -1,0 +1,95 @@
+{
+  "modes": {
+    "PILOT": {"target": 200, "max_city_share": 0.35},
+    "FAST": {"target": 20000, "max_city_share": 0.25},
+    "FULL": {"target": 50000, "max_city_share": 0.25}
+  },
+  "paths": {
+    "raw": "data/raw/v3",
+    "processed": "data/processed",
+    "checkpoints": "data/checkpoints/v3",
+    "reports": "reports/scraping/v3"
+  },
+  "sources": [
+    {
+      "name": "preserved_local_evidence",
+      "kind": "file",
+      "enabled": false,
+      "source_label": null,
+      "input_paths": ["data/raw/maisondelux_raw.parquet", "data/sample/maisondelux_model_sample.csv"],
+      "policy_note": "Existing locally preserved evidence only. Disabled for V3.1 source recovery so V2-era records are never mixed into a new run."
+    },
+    {
+      "name": "mubawab_authorized_feed",
+      "source_label": "mubawab.ma",
+      "kind": "authorized_feed",
+      "enabled": false,
+      "authorization_reference": null,
+      "input_paths": ["data/input/authorized/mubawab.*"],
+      "base_url": "https://www.mubawab.ma/fr/",
+      "robots_url": "https://www.mubawab.ma/robots.txt",
+      "terms_url": "https://www.mubawab.ma/fr/privacy",
+      "policy_note": "Bulk extraction is disabled until written permission or a licensed feed is supplied."
+    },
+    {
+      "name": "agenz_authorized_feed",
+      "source_label": "agenz.ma",
+      "kind": "authorized_feed",
+      "enabled": false,
+      "authorization_reference": null,
+      "input_paths": ["data/input/authorized/agenz.*"],
+      "base_url": "https://agenz.ma/fr",
+      "robots_url": "https://agenz.ma/robots.txt",
+      "terms_url": "https://agenz.ma/fr/conditions-d-utilisation",
+      "policy_note": "Use the professional API/feed; public-page database extraction is not authorized."
+    },
+    {
+      "name": "sarouty_authorized_feed",
+      "source_label": "sarouty.ma",
+      "kind": "authorized_feed",
+      "enabled": false,
+      "authorization_reference": null,
+      "input_paths": ["data/input/authorized/sarouty.*"],
+      "base_url": "https://www.sarouty.ma/",
+      "robots_url": "https://www.sarouty.ma/robots.txt",
+      "terms_url": "https://www.sarouty.ma/en/terms-and-conditions/",
+      "policy_note": "Robots permits public listing routes but bulk reuse permission is not established; use a licensed feed."
+    },
+    {
+      "name": "marsad_immo_enterprise_feed",
+      "source_label": "marsadimmo.com",
+      "kind": "authorized_feed",
+      "enabled": false,
+      "authorization_reference": null,
+      "input_paths": ["data/input/authorized/marsad_immo.*"],
+      "base_url": "https://marsadimmo.com/",
+      "robots_url": "https://marsadimmo.com/robots.txt",
+      "terms_url": "https://marsadimmo.com/cgu",
+      "policy_note": "Best coverage candidate. Enable only after an Enterprise API/export agreement explicitly permits internal modeling and retained listing-level IDs or URLs."
+    },
+    {
+      "name": "marocain_investments_authorized_feed",
+      "source_label": "marocain.investments",
+      "kind": "authorized_feed",
+      "enabled": false,
+      "authorization_reference": null,
+      "input_paths": ["data/input/authorized/marocain_investments.*"],
+      "base_url": "https://marocain.investments/",
+      "robots_url": "https://marocain.investments/robots.txt",
+      "terms_url": "https://marocain.investments/legal/terms",
+      "policy_note": "Public API is technically strong, but current terms prohibit derivative datasets/products. Enable only with a written exception or licensed export."
+    },
+    {
+      "name": "alomrane_authorized_export",
+      "source_label": "alomrane.gov.ma",
+      "kind": "authorized_feed",
+      "enabled": false,
+      "authorization_reference": null,
+      "input_paths": ["data/input/authorized/alomrane.*"],
+      "base_url": "https://www.alomrane.gov.ma/Nos-produits/Projets",
+      "robots_url": "https://www.alomrane.gov.ma/robots.txt",
+      "terms_url": null,
+      "policy_note": "First-party nationwide project catalogue, but no open reuse licence was found and project pages may lack unit-level price/surface. Enable only with an authorized structured export that passes the V3.1 field gates."
+    }
+  ]
+}
