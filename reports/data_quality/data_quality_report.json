@@ -1,0 +1,112 @@
+{
+  "generated_at": "2026-09-02T22:59:19.454425+00:00",
+  "raw_rows": 25433,
+  "valid_unique_rows": 13867,
+  "rejected_or_warning_rows": 11566,
+  "duplicate_rows": 1142,
+  "duplicate_methods": {
+    "listing_id": 1141,
+    "source_id": 0,
+    "url": 0,
+    "fingerprint": 1,
+    "fuzzy": 0
+  },
+  "sources": [
+    {
+      "source": "mubawab.ma",
+      "raw_rows": 25433,
+      "valid_rows": 13867,
+      "rejected_rows": 11566,
+      "cities": 34,
+      "neighborhoods": 1043
+    }
+  ],
+  "regions_with_listings": 9,
+  "cities_with_listings": 34,
+  "neighborhoods_with_listings": 1043,
+  "validation_status": {
+    "valid": 13867,
+    "rejected": 8422,
+    "warning": 3144
+  },
+  "validation_reasons": {
+    "unknown_property_type": 1342,
+    "price_per_m2_outlier": 1453,
+    "implausible_price": 1105,
+    "missing_price": 2344,
+    "missing_city": 3446,
+    "missing_or_invalid_neighborhood": 7404,
+    "duplicate_listing_id": 1141,
+    "implausible_surface": 1,
+    "implausible_bedrooms": 7,
+    "implausible_bathrooms": 6,
+    "unknown_transaction": 219,
+    "implausible_rooms": 2,
+    "missing_surface": 1073,
+    "duplicate_fingerprint": 1
+  },
+  "missing_value_rates": {
+    "listing_id": 0.0,
+    "source": 0.0,
+    "source_listing_id": 0.6991,
+    "city": 0.0,
+    "neighborhood": 0.2911,
+    "region": 0.0002,
+    "latitude": 1.0,
+    "longitude": 1.0,
+    "surface_m2": 0.0422,
+    "bedrooms": 0.0469,
+    "bathrooms": 0.0536,
+    "furnished_status": 0.0,
+    "parking": 0.0,
+    "balcony": 0.0,
+    "sea_view": 0.0,
+    "price_mad": 0.0922,
+    "price_per_m2": 0.1339,
+    "property_type": 0.0528,
+    "transaction_type": 0.0,
+    "publication_date": 1.0,
+    "publication_date_status": 0.0,
+    "scraped_at": 0.0,
+    "url": 0.6628,
+    "validation_status": 0.0,
+    "validation_reasons": 0.5452,
+    "deduplication_status": 0.0,
+    "duplicate_of": 0.9551,
+    "title_raw": 0.3313,
+    "price_raw": 0.3317,
+    "location_raw": 0.3313,
+    "details_raw": 0.3364,
+    "source_record_path": 0.0
+  },
+  "recovery_lineage": [
+    {
+      "path": "data\\external\\recovery_archive\\20260902T224619Z\\misplaced_notebook_data\\data\\raw\\maisondelux_raw.csv",
+      "rows": 8425,
+      "role": "URL-rich recovery base"
+    },
+    {
+      "path": "data\\external\\recovery_archive\\20260902T224619Z\\dangling_v3_tree_87e06eeb\\data\\raw\\maisonlux_listings_v3.csv",
+      "rows": 20,
+      "role": "recovered V3 pilot evidence"
+    },
+    {
+      "path": "data\\external\\recovery_archive\\20260902T224619Z\\dangling_v3_tree_87e06eeb\\data\\raw\\maisonlux_scrapy_v3.csv",
+      "rows": 130,
+      "role": "recovered V3 pilot evidence"
+    },
+    {
+      "path": "git:HEAD:data/raw/maisonlux_maroc_complet.csv",
+      "rows": 16858,
+      "role": "historical four-column recovery dataset"
+    }
+  ],
+  "explicit_unknown_rates": {
+    "furnished_status": 0.8155,
+    "parking": 0.7667,
+    "balcony": 0.8138,
+    "sea_view": 0.9684,
+    "publication_date_status": 1.0
+  },
+  "price_per_m2_model_policy": "price_per_m2 is audit-only and forbidden as a price_mad model input"
+}

@@ -1,0 +1,126 @@
+[
+  {
+    "source": "data.gov.ma",
+    "status": "enabled_reference_only",
+    "robots_status": "allowed",
+    "pilot_status": "passed",
+    "reason": "CKAN API returned open-data metadata; no listing-level rows imported",
+    "checked_at": "2026-09-04T21:02:59.019314+00:00",
+    "http_status": 200,
+    "records": [
+      {
+        "dataset_id": "6c06bcaa-420f-4075-a22e-272e710ec150",
+        "title": "Montants moyens honoraires des agents immobiliers - Région Rabat- Salé -Kénitra 2001-2022",
+        "url": "https://data.gov.ma/data/fr/dataset/montants-moyens-honoraires-des-agents-immobiliers-region-rabat-sale-kenitra-2001-2019",
+        "role": "benchmark_or_reference_not_listing"
+      },
+      {
+        "dataset_id": "37c0ebe6-c281-4c56-b2ae-20220e40a83c",
+        "title": "Montants moyens honoraires des agents immobiliers - Région Béni Mellal -Khénifra 2001-2019",
+        "url": "https://data.gov.ma/data/fr/dataset/montants-moyens-honoraires-des-agents-immobiliers-region-beni-mellal-khenifra-2001-2019",
+        "role": "benchmark_or_reference_not_listing"
+      },
+      {
+        "dataset_id": "e0a6de06-347c-4be9-97ca-7cbeb009dab2",
+        "title": "Montants moyens honoraires des agents immobiliers- Région Casablanca -Settat 2001-2022",
+        "url": "https://data.gov.ma/data/fr/dataset/montants-moyens-honoraires-des-agents-immobiliers-settat-2001-2019",
+        "role": "benchmark_or_reference_not_listing"
+      }
+    ],
+    "base_url": "https://data.gov.ma/",
+    "robots_url": "https://data.gov.ma/robots.txt",
+    "terms_url": "https://www.data.gov.ma/fr/node/14",
+    "permitted_use": "reference_only",
+    "authorization_reference": null
+  },
+  {
+    "source": "mubawab.ma",
+    "status": "disabled",
+    "robots_status": "http_200",
+    "pilot_status": "not_run",
+    "reason": "Terms prohibit substantial database extraction/reuse; written license required",
+    "checked_at": "2026-09-04T21:02:59.689535+00:00",
+    "http_status": null,
+    "records": [],
+    "base_url": "https://www.mubawab.ma/fr/",
+    "robots_url": "https://www.mubawab.ma/robots.txt",
+    "terms_url": "https://www.mubawab.ma/fr/privacy",
+    "permitted_use": "none",
+    "authorization_reference": null
+  },
+  {
+    "source": "agenz.ma",
+    "status": "disabled",
+    "robots_status": "http_200",
+    "pilot_status": "not_run",
+    "reason": "Robots blocks search/list/map routes and terms restrict data to personal use; request professional API",
+    "checked_at": "2026-09-04T21:03:00.435959+00:00",
+    "http_status": null,
+    "records": [],
+    "base_url": "https://agenz.ma/fr",
+    "robots_url": "https://agenz.ma/robots.txt",
+    "terms_url": "https://agenz.ma/fr/conditions-d-utilisation",
+    "permitted_use": "none",
+    "authorization_reference": null
+  },
+  {
+    "source": "marocannonces.com",
+    "status": "disabled",
+    "robots_status": "http_200",
+    "pilot_status": "not_run",
+    "reason": "robots.txt disallows all generic crawling and terms prohibit reuse",
+    "checked_at": "2026-09-04T21:03:01.000805+00:00",
+    "http_status": null,
+    "records": [],
+    "base_url": "https://www.marocannonces.com/",
+    "robots_url": "https://www.marocannonces.com/robots.txt",
+    "terms_url": "https://www.marocannonces.com/conditions-utilisation.html",
+    "permitted_use": "none",
+    "authorization_reference": null
+  },
+  {
+    "source": "avito.ma",
+    "status": "disabled",
+    "robots_status": "http_200",
+    "pilot_status": "not_run",
+    "reason": "Cloudflare access challenge encountered and no clear automated-use permission; no bypass",
+    "checked_at": "2026-09-04T21:03:01.667749+00:00",
+    "http_status": null,
+    "records": [],
+    "base_url": "https://www.avito.ma/",
+    "robots_url": "https://www.avito.ma/robots.txt",
+    "terms_url": null,
+    "permitted_use": "none",
+    "authorization_reference": null
+  },
+  {
+    "source": "360annonces.com",
+    "status": "disabled",
+    "robots_status": "http_200",
+    "pilot_status": "not_run",
+    "reason": "Terms prohibit collection without authorization",
+    "checked_at": "2026-09-04T21:03:02.357225+00:00",
+    "http_status": null,
+    "records": [],
+    "base_url": "https://www.360annonces.com/",
+    "robots_url": "https://www.360annonces.com/robots.txt",
+    "terms_url": "https://www.360annonces.com/conditions-generales",
+    "permitted_use": "none",
+    "authorization_reference": null
+  },
+  {
+    "source": "sarouty.ma",
+    "status": "disabled",
+    "robots_status": "http_200",
+    "pilot_status": "not_run",
+    "reason": "Robots permits public listing routes with a 10-second crawl delay, but bulk database reuse permission is not established; written permission or a licensed feed is required",
+    "checked_at": "2026-09-04T21:03:03.475076+00:00",
+    "http_status": null,
+    "records": [],
+    "base_url": "https://www.sarouty.ma/",
+    "robots_url": "https://www.sarouty.ma/robots.txt",
+    "terms_url": "https://www.sarouty.ma/en/terms-and-conditions/",
+    "permitted_use": "none",
+    "authorization_reference": null
+  }
+]

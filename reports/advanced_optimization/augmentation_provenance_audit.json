@@ -1,0 +1,8 @@
+{
+  "synthetic_rows": 10829,
+  "synthetic_missing_source_listing_id": 10829,
+  "synthetic_missing_duplicate_group_id": 10829,
+  "synthetic_feature_signature_matches_real_train": 2187,
+  "synthetic_feature_signature_matches_holdout": 691,
+  "note": "Une signature commune indique un bien compatible, pas une preuve de filiation."
+}

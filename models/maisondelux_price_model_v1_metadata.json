@@ -1,0 +1,37 @@
+{
+  "model_name": "CatBoost",
+  "feature_set": "EXTENDED",
+  "target_mode": "LOG",
+  "target": "price_mad",
+  "features": [
+    "surface_m2",
+    "bedrooms",
+    "bathrooms",
+    "region",
+    "city",
+    "neighborhood",
+    "property_type",
+    "parking",
+    "balcony",
+    "sea_view",
+    "furnished_status"
+  ],
+  "rare_thresholds": {
+    "neighborhood": 10,
+    "city": 20
+  },
+  "train_rows": 10158,
+  "test_rows": 2708,
+  "split_seed": 18,
+  "test_metrics": {
+    "MAE": 403757.2249569919,
+    "RMSE": 882622.4733338939,
+    "R2": 0.6220989808809259,
+    "MedianAE": 208563.09795778606,
+    "MdAPE_pct": 14.621838178638852,
+    "Within_10_pct": 36.29985228951256,
+    "Within_20_pct": 64.62333825701624,
+    "Within_30_pct": 79.4682422451994
+  },
+  "notes": "price_mad est un prix d'annonce et non nécessairement le prix final de transaction."
+}

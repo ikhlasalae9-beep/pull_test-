@@ -1,0 +1,11 @@
+path,bytes,sha256,reason
+frontend/site.html,28922,5219ba1fda51bb55cb1a39970104031f6307d83d8545a3bf30618bf137164337,"superseded static site / legacy model, no active imports"
+frontend/dashboard.html,34523,e0da3d53d0adb43c6207b8dd4da02f8f9295b33a235d6c8ea6afeaf2fb1f6aa1,"superseded static site / legacy model, no active imports"
+frontend/login.html,7054,08e0af064e72ddf514478cbdca415671a9fe872b535a8cb7be2eb32e7dadf43a,"superseded static site / legacy model, no active imports"
+frontend/signup.html,11280,2c1ff171498bd50cce351e1e08618f6f46c278c94f49287f58211a3d1eb48434,"superseded static site / legacy model, no active imports"
+frontend/assets/css/.gitkeep,2,7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6,"superseded static site / legacy model, no active imports"
+frontend/assets/images/.gitkeep,2,7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6,"superseded static site / legacy model, no active imports"
+frontend/assets/js/.gitkeep,2,7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6,"superseded static site / legacy model, no active imports"
+ml/artifacts/pipeline.pkl,38029755,b6ac312f3c57a035213a8f7e497c54961a167bf5f8efdc78e8b344e59fa56f7e,"superseded static site / legacy model, no active imports"
+ml/artifacts/metrics.json,5276,2839fa2d5eccd7fa6f92d0baf9463ffca35464f85393224b0ee639d91b1089ff,"superseded static site / legacy model, no active imports"
+ml/artifacts/model_metadata.json,3778,c81abc49dcdf45d120c25014b22d0fa0a76debd7b2d30be57a52864346106f53,"superseded static site / legacy model, no active imports"

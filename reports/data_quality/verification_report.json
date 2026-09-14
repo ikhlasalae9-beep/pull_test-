@@ -1,0 +1,127 @@
+{
+  "status": "passed",
+  "row_counts": {
+    "raw": 25433,
+    "valid_unique": 13867,
+    "rejected_or_warning": 11566,
+    "duplicates": 1142
+  },
+  "csv_parquet_equivalent": true,
+  "clean_listing_ids_unique": true,
+  "workbooks": {
+    "raw": {
+      "sheets": [
+        "all_rows",
+        "valid_rows",
+        "rejected_rows",
+        "source_summary",
+        "city_summary",
+        "quality_summary",
+        "scraping_errors"
+      ],
+      "dimensions": {
+        "all_rows": "A1:AF25434",
+        "valid_rows": "A1:AF13868",
+        "rejected_rows": "A1:AF11567",
+        "source_summary": "A1:F2",
+        "city_summary": "A1:E35",
+        "quality_summary": "A1:E19",
+        "scraping_errors": "A1:D1"
+      },
+      "formula_count": 4,
+      "formula_error_tokens": [],
+      "first_header": "listing_id"
+    },
+    "clean": {
+      "sheets": [
+        "all_rows",
+        "valid_rows",
+        "rejected_rows",
+        "source_summary",
+        "city_summary",
+        "quality_summary",
+        "scraping_errors"
+      ],
+      "dimensions": {
+        "all_rows": "A1:AF13868",
+        "valid_rows": "A1:AF13868",
+        "rejected_rows": "A1:AF11567",
+        "source_summary": "A1:F2",
+        "city_summary": "A1:E35",
+        "quality_summary": "A1:E19",
+        "scraping_errors": "A1:D1"
+      },
+      "formula_count": 4,
+      "formula_error_tokens": [],
+      "first_header": "listing_id"
+    }
+  },
+  "workbook_visual_previews_checked": 14,
+  "geographic_feature_counts": {
+    "regions": 12,
+    "cities": 46043,
+    "neighborhoods": 967
+  },
+  "files": {
+    "data/raw/maisondelux_raw.csv": {
+      "bytes": 10770891,
+      "sha256": "21d83ac8dd1617a4536478254f22750050de6c57e0815e425a3ceb58a759fb2e"
+    },
+    "data/raw/maisondelux_raw.xlsx": {
+      "bytes": 9103136,
+      "sha256": "5d659ae99b74a5ee7eb3fe54d3c20bf878c4d2aeac3e14d38da3eda847ea0b4a"
+    },
+    "data/raw/maisondelux_raw.parquet": {
+      "bytes": 1701873,
+      "sha256": "b1e2878343aba14c098142b2e9d4ff0843d4dc1390005b41428f1d2d056b1a47"
+    },
+    "data/processed/maisondelux_clean.csv": {
+      "bytes": 5696258,
+      "sha256": "3a7a1cc9c2c3be4f6db2f4d53c8f7e51e84ba227d5a9017a3d869ae7715c5b8b"
+    },
+    "data/processed/maisondelux_clean.xlsx": {
+      "bytes": 7060291,
+      "sha256": "0e927ee66d9e301b3cf82187ce28cc3012bbdfccd4b76e5df2eede2d471db1b7"
+    },
+    "data/processed/maisondelux_clean.parquet": {
+      "bytes": 977098,
+      "sha256": "9e3e9bc06eb1933dbb1119a84e2fad578416086fea7f10875a2e1f8f1198ae8d"
+    },
+    "data/processed/maisondelux_rejected.csv": {
+      "bytes": 5075034,
+      "sha256": "3a0974791ab12ed9e91805274b55f6c6f95fd727a22b435828e962768ae007b3"
+    },
+    "data/geographic/morocco_regions.geojson": {
+      "bytes": 218709,
+      "sha256": "03b64a6edc5745c7c7a0000ac77e67116d0800baca0281b1d133b57fd842c2a7"
+    },
+    "data/geographic/morocco_cities.geojson": {
+      "bytes": 28783165,
+      "sha256": "7b8a40b9bc5f78feaaccb3c74d2223bfcb43d7c9d9306268ec38d1c82c15ee99"
+    },
+    "data/geographic/morocco_neighborhoods.geojson": {
+      "bytes": 636639,
+      "sha256": "867d7b6a35ebe469877dbcaa1c3f02e6aeb839d15e8f3f34022c29201e641644"
+    },
+    "reports/data_quality/data_quality_report.md": {
+      "bytes": 2780,
+      "sha256": "1ac1d77d3289c90ad2371dad350e32c22d78e091c4cbd364903e613ee843ffa7"
+    },
+    "reports/scraping/source_coverage_report.md": {
+      "bytes": 2236,
+      "sha256": "a778ff77e3d1ee44ef09fb5eb29fa9f25be482b9e1e3d534643627dbb0666bd2"
+    },
+    "reports/scraping/geographic_coverage_report.md": {
+      "bytes": 1685,
+      "sha256": "a2d0bdf526edeb695cd30cb617a96cc18d73a8103255d5af31962bbd8a436467"
+    },
+    "reports/scraping/historical_coverage_report.md": {
+      "bytes": 328,
+      "sha256": "6ec8be994de022fcaf5efbaeb906c3607759d98a8e6c366a8ce213280427b0b7"
+    },
+    "ml/notebooks/maisondelux_data_pipeline.ipynb": {
+      "bytes": 5826,
+      "sha256": "6a1d15fbe5ddea0d5e59b0c5fd8480c89b2f3cd070b6e763ec1563d8537e2108"
+    }
+  }
+}

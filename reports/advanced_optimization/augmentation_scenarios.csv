@@ -1,0 +1,4 @@
+scenario,status
+réel seul,évalué
+réel + augmentation,EXCLUE : générateur et filiation parentale non disponibles
+réel + augmentation poids 0.25,EXCLUE : générateur et filiation parentale non disponibles

@@ -1,0 +1,668 @@
+{
+  "version": "model_ready_v1",
+  "input": "data/processed/maisondelux_clean.csv",
+  "input_sha256": "3a7a1cc9c2c3be4f6db2f4d53c8f7e51e84ba227d5a9017a3d869ae7715c5b8b",
+  "outputs": {
+    "csv": "data/processed/maisondelux_model_ready_v1.csv",
+    "parquet": "data/processed/maisondelux_model_ready_v1.parquet"
+  },
+  "summary": {
+    "original_rows": 13867,
+    "final_model_ready_rows": 13537,
+    "rows_removed": 330,
+    "confirmed_duplicates_removed": 26,
+    "probable_parsing_errors_removed": 304,
+    "possible_duplicates_retained": 3455,
+    "property_type_rows_changed": 1659,
+    "invalid_neighborhoods_detected": 610,
+    "regions": 10,
+    "cities": 30,
+    "neighborhoods": 646
+  },
+  "exclusion_reason_counts": {
+    "probable_parsing_error": 304,
+    "confirmed_duplicate": 26
+  },
+  "exclusion_reason_explanations": {
+    "not_sale": "The transaction type is not a sale listing.",
+    "invalid_price": "price_mad is missing, non-finite, or non-positive.",
+    "invalid_surface": "surface_m2 is missing, non-finite, or non-positive.",
+    "missing_city": "No usable city is present.",
+    "missing_region": "No usable region can be retained or derived from the city.",
+    "invalid_prior_validation": "The existing validation status is neither valid nor warning.",
+    "confirmed_duplicate": "A higher-evidence row represents the same property observation.",
+    "probable_parsing_error": "Numeric magnitude or consistency evidence indicates a probable error."
+  },
+  "property_types_before": {
+    "appartement": 13867
+  },
+  "property_types_after": {
+    "appartement": 11918,
+    "unknown": 1247,
+    "studio": 202,
+    "duplex": 107,
+    "immeuble": 32,
+    "villa": 13,
+    "riad": 9,
+    "maison": 6,
+    "bureau": 2,
+    "magasin": 1
+  },
+  "property_type_evidence": {
+    "explicit_appartement": 12208,
+    "weak_or_ambiguous_evidence": 1269,
+    "explicit_studio": 214,
+    "explicit_duplex": 109,
+    "explicit_immeuble": 33,
+    "explicit_villa": 13,
+    "explicit_riad": 9,
+    "explicit_maison": 8,
+    "explicit_bureau": 3,
+    "explicit_magasin": 1
+  },
+  "neighborhood_quality": {
+    "valid_rows": 13257,
+    "invalid_rows": 610,
+    "rejection_reason_counts": {
+      "same_as_city": 238,
+      "trailing_preposition": 166,
+      "sentence_or_promotional_phrase|trailing_preposition": 135,
+      "token_count|sentence_or_promotional_phrase|trailing_preposition": 18,
+      "sentence_or_promotional_phrase": 12,
+      "token_count|trailing_preposition": 11,
+      "sentence_or_promotional_phrase|measurement_or_travel_time|trailing_preposition": 8,
+      "sentence_punctuation": 3,
+      "token_count|sentence_or_promotional_phrase": 2,
+      "measurement_or_travel_time|trailing_preposition": 2,
+      "sentence_or_promotional_phrase|sentence_punctuation": 2,
+      "measurement_or_travel_time": 2,
+      "token_count|measurement_or_travel_time": 1,
+      "token_count": 1,
+      "sentence_or_promotional_phrase|sentence_punctuation|trailing_preposition": 1,
+      "token_count|sentence_or_promotional_phrase|sentence_punctuation|trailing_preposition": 1,
+      "sentence_or_promotional_phrase|sentence_punctuation|measurement_or_travel_time|trailing_preposition": 1,
+      "sentence_or_promotional_phrase|measurement_or_travel_time": 1,
+      "sentence_punctuation|trailing_preposition": 1,
+      "token_count|sentence_or_promotional_phrase|sentence_punctuation": 1,
+      "token_count|sentence_or_promotional_phrase|measurement_or_travel_time|trailing_preposition": 1,
+      "token_count|measurement_or_travel_time|trailing_preposition": 1,
+      "token_count|property_description": 1
+    },
+    "rejected_examples": [
+      {
+        "city": "El Jadida",
+        "neighborhood_original": "El Jadida",
+        "neighborhood_rejection_reason": "same_as_city"
+      },
+      {
+        "city": "Berrechid",
+        "neighborhood_original": "Berrechid",
+        "neighborhood_rejection_reason": "same_as_city"
+      },
+      {
+        "city": "Larache",
+        "neighborhood_original": "Larache",
+        "neighborhood_rejection_reason": "same_as_city"
+      },
+      {
+        "city": "Casablanca",
+        "neighborhood_original": "l'achat à",
+        "neighborhood_rejection_reason": "sentence_or_promotional_phrase|trailing_preposition"
+      },
+      {
+        "city": "Marrakech",
+        "neighborhood_original": "Golf City Prestigia Votre agence immobilière LYZ",
+        "neighborhood_rejection_reason": "sentence_or_promotional_phrase"
+      },
+      {
+        "city": "Marrakech",
+        "neighborhood_original": "Les Portes de",
+        "neighborhood_rejection_reason": "trailing_preposition"
+      },
+      {
+        "city": "Marrakech",
+        "neighborhood_original": "une résidence neuve sur la Route de Casablanca à",
+        "neighborhood_rejection_reason": "token_count|sentence_or_promotional_phrase|trailing_preposition"
+      },
+      {
+        "city": "Marrakech",
+        "neighborhood_original": "mosquée Koutoubia et à 15 minutes de l’aéroport",
+        "neighborhood_rejection_reason": "token_count|measurement_or_travel_time"
+      },
+      {
+        "city": "Marrakech",
+        "neighborhood_original": "le prestigieux Golf City de",
+        "neighborhood_rejection_reason": "trailing_preposition"
+      },
+      {
+        "city": "Ifrane",
+        "neighborhood_original": "prairie à",
+        "neighborhood_rejection_reason": "trailing_preposition"
+      },
+      {
+        "city": "Marrakech",
+        "neighborhood_original": "l’un des secteurs les plus recherchés de",
+        "neighborhood_rejection_reason": "trailing_preposition"
+      },
+      {
+        "city": "Marrakech",
+        "neighborhood_original": "Marrakech Votre agence immobilière de confiance à",
+        "neighborhood_rejection_reason": "sentence_or_promotional_phrase|trailing_preposition"
+      },
+      {
+        "city": "Marrakech",
+        "neighborhood_original": "laver Guéliz à",
+        "neighborhood_rejection_reason": "trailing_preposition"
+      },
+      {
+        "city": "Marrakech",
+        "neighborhood_original": "la location à Victor Hugo",
+        "neighborhood_rejection_reason": "sentence_or_promotional_phrase"
+      },
+      {
+        "city": "Agadir",
+        "neighborhood_original": "un emplacement stratégique à",
+        "neighborhood_rejection_reason": "sentence_or_promotional_phrase|trailing_preposition"
+      },
+      {
+        "city": "Agadir",
+        "neighborhood_original": "laver Hay Salam à",
+        "neighborhood_rejection_reason": "trailing_preposition"
+      },
+      {
+        "city": "Agadir",
+        "neighborhood_original": "le quartier recherché de Charaf",
+        "neighborhood_rejection_reason": "sentence_or_promotional_phrase"
+      },
+      {
+        "city": "Fnidek",
+        "neighborhood_original": "l'achat à",
+        "neighborhood_rejection_reason": "sentence_or_promotional_phrase|trailing_preposition"
+      },
+      {
+        "city": "Marrakech",
+        "neighborhood_original": "partir VEPN25078 Votre agence immobilière à",
+        "neighborhood_rejection_reason": "sentence_or_promotional_phrase|trailing_preposition"
+      },
+      {
+        "city": "Larache",
+        "neighborhood_original": "prime location in",
+        "neighborhood_rejection_reason": "sentence_or_promotional_phrase"
+      },
+      {
+        "city": "Marrakech",
+        "neighborhood_original": "20min de",
+        "neighborhood_rejection_reason": "trailing_preposition"
+      },
+      {
+        "city": "Marrakech",
+        "neighborhood_original": "l’un des quartiers les plus prisés de",
+        "neighborhood_rejection_reason": "trailing_preposition"
+      },
+      {
+        "city": "Marrakech",
+        "neighborhood_original": "un quartier calme et recherché de",
+        "neighborhood_rejection_reason": "sentence_or_promotional_phrase|trailing_preposition"
+      },
+      {
+        "city": "Casablanca",
+        "neighborhood_original": "saisir au 14ᵉ étage avec vue dégagée sur",
+        "neighborhood_rejection_reason": "token_count|trailing_preposition"
+      },
+      {
+        "city": "Berrechid",
+        "neighborhood_original": "l’entrée de",
+        "neighborhood_rejection_reason": "trailing_preposition"
+      },
+      {
+        "city": "Marrakech",
+        "neighborhood_original": "le quartier prisé de Guéliz à",
+        "neighborhood_rejection_reason": "sentence_or_promotional_phrase|trailing_preposition"
+      },
+      {
+        "city": "Marrakech",
+        "neighborhood_original": "un emplacement stratégique à",
+        "neighborhood_rejection_reason": "sentence_or_promotional_phrase|trailing_preposition"
+      },
+      {
+        "city": "Marrakech",
+        "neighborhood_original": "prestigieuse Palmeraie de",
+        "neighborhood_rejection_reason": "trailing_preposition"
+      },
+      {
+        "city": "Marrakech",
+        "neighborhood_original": "laver Agdal à",
+        "neighborhood_rejection_reason": "trailing_preposition"
+      },
+      {
+        "city": "Khouribga",
+        "neighborhood_original": "Khouribga",
+        "neighborhood_rejection_reason": "same_as_city"
+      }
+    ]
+  },
+  "duplicate_quality": {
+    "confirmed_groups": 26,
+    "confirmed_rows_removed": 26,
+    "possible_groups": 1600,
+    "possible_rows_retained": 3455
+  },
+  "batch_audit": [
+    {
+      "source_record_path": "git:HEAD:data/raw/maisonlux_maroc_complet.csv",
+      "batch_id": "git_head_complete",
+      "row_count": 10109,
+      "median_price_mad": 1400000.0,
+      "median_surface_m2": 100.0,
+      "median_price_per_m2": 13750.0,
+      "p95_price_per_m2": 27635.85600000001,
+      "p99_price_per_m2": 39701.04840000003,
+      "property_type_distribution": "{\"appartement\": 9005, \"immeuble\": 27, \"magasin\": 1, \"maison\": 1, \"riad\": 7, \"studio\": 64, \"unknown\": 1002, \"villa\": 2}",
+      "city_distribution": "{\"Agadir\": 329, \"Berrechid\": 55, \"Béni Mellal\": 23, \"Casablanca\": 4461, \"El Jadida\": 131, \"Essaouira\": 52, \"Fès\": 314, \"Kénitra\": 231, \"Larache\": 22, \"Marrakech\": 1867, \"Meknès\": 247, \"Mohammedia\": 233, \"Oujda\": 69, \"Rabat\": 388, \"Safi\": 18, \"Salé\": 205, \"Settat\": 16, \"Tanger\": 1091, \"Témara\": 190, \"Tétouan\": 141}",
+      "missing_title_raw_percent": 0.0,
+      "missing_price_raw_percent": 0.0,
+      "missing_location_raw_percent": 0.0,
+      "missing_details_raw_percent": 0.0,
+      "missing_url_percent": 100.0,
+      "missing_source_listing_id_percent": 100.0,
+      "p95_to_batch_median_ratio": 0.8501101248409655,
+      "batch_anomaly_status": "not_flagged",
+      "batch_anomaly_reason": ""
+    },
+    {
+      "source_record_path": "data\\external\\recovery_archive\\20260902T224619Z\\misplaced_notebook_data\\data\\raw\\maisondelux_raw.csv",
+      "batch_id": "recovery_misplaced_notebook",
+      "row_count": 3665,
+      "median_price_mad": 1900000.0,
+      "median_surface_m2": 110.0,
+      "median_price_per_m2": 17078.95,
+      "p95_price_per_m2": 108318.83799999997,
+      "p99_price_per_m2": 140248.22040000002,
+      "property_type_distribution": "{\"appartement\": 3127, \"bureau\": 3, \"duplex\": 109, \"immeuble\": 5, \"maison\": 7, \"riad\": 2, \"studio\": 150, \"unknown\": 251, \"villa\": 11}",
+      "city_distribution": "{\"Agadir\": 161, \"Berrechid\": 33, \"Bouskoura\": 99, \"Bouznika\": 21, \"Casablanca\": 2452, \"Chefchaouen\": 1, \"El Jadida\": 55, \"Essaouira\": 24, \"Fnidek\": 3, \"Ifrane\": 3, \"Khouribga\": 10, \"Larache\": 14, \"Marrakech\": 624, \"Tanger\": 165}",
+      "missing_title_raw_percent": 100.0,
+      "missing_price_raw_percent": 100.0,
+      "missing_location_raw_percent": 100.0,
+      "missing_details_raw_percent": 100.0,
+      "missing_url_percent": 0.0,
+      "missing_source_listing_id_percent": 12.22,
+      "p95_to_batch_median_ratio": 3.3320097229775785,
+      "batch_anomaly_status": "suspicious_high_price_per_m2_tail",
+      "batch_anomaly_reason": "The batch p95 price/m² is at least 2.5x the median batch p95; the batch is flagged, not removed wholesale."
+    },
+    {
+      "source_record_path": "data\\external\\recovery_archive\\20260902T224619Z\\dangling_v3_tree_87e06eeb\\data\\raw\\maisonlux_scrapy_v3.csv",
+      "batch_id": "recovery_dangling_v3",
+      "row_count": 93,
+      "median_price_mad": 1500000.0,
+      "median_surface_m2": 100.0,
+      "median_price_per_m2": 16972.48,
+      "p95_price_per_m2": 32508.559999999994,
+      "p99_price_per_m2": 38248.36039999999,
+      "property_type_distribution": "{\"appartement\": 76, \"immeuble\": 1, \"unknown\": 16}",
+      "city_distribution": "{\"Agadir\": 12, \"Casablanca\": 17, \"El Jadida\": 14, \"Marrakech\": 13, \"Rabat\": 26, \"Tanger\": 10, \"Témara\": 1}",
+      "missing_title_raw_percent": 0.0,
+      "missing_price_raw_percent": 0.0,
+      "missing_location_raw_percent": 0.0,
+      "missing_details_raw_percent": 100.0,
+      "missing_url_percent": 0.0,
+      "missing_source_listing_id_percent": 0.0,
+      "p95_to_batch_median_ratio": 1.0,
+      "batch_anomaly_status": "not_flagged",
+      "batch_anomaly_reason": ""
+    }
+  ],
+  "outlier_decisions": {
+    "not_flagged": 13289,
+    "probable_error": 304,
+    "uncertain": 233,
+    "valid_extreme": 41
+  },
+  "outlier_thresholds": {
+    "reference_price_per_m2_p99": 39730.33,
+    "probable_batch_price_per_m2_threshold": 75000.0,
+    "price_p99": 10950000.0,
+    "surface_p99": 342.0
+  },
+  "missing_percent_final": {
+    "price_mad": 0.0,
+    "surface_m2": 0.0,
+    "city": 0.0,
+    "region": 0.0,
+    "neighborhood_clean": 3.94,
+    "property_type_repaired": 0.0,
+    "bedrooms": 0.72,
+    "bathrooms": 1.43,
+    "url": 74.48,
+    "source_listing_id": 77.69,
+    "publication_date": 100.0,
+    "latitude": 100.0,
+    "longitude": 100.0
+  },
+  "numeric_percentiles_final": {
+    "price_mad": {
+      "min": 60000.0,
+      "p01": 300000.0,
+      "p05": 470000.0,
+      "p25": 1000000.0,
+      "p50": 1500000.0,
+      "p75": 2350000.0,
+      "p95": 4524000.0,
+      "p99": 7782000.0,
+      "max": 34000000.0
+    },
+    "surface_m2": {
+      "min": 14.0,
+      "p01": 42.0,
+      "p05": 52.0,
+      "p25": 79.0,
+      "p50": 105.0,
+      "p75": 142.0,
+      "p95": 234.0,
+      "p99": 342.64,
+      "max": 2200.0
+    },
+    "price_per_m2": {
+      "min": 1000.0,
+      "p01": 4142.86,
+      "p05": 6250.0,
+      "p25": 10461.54,
+      "p50": 14500.0,
+      "p75": 19420.29,
+      "p95": 29074.0,
+      "p99": 52382.61,
+      "max": 149038.46
+    }
+  },
+  "geographic_coverage": {
+    "regions": {
+      "Casablanca-Settat": 7378,
+      "Marrakech-Safi": 2558,
+      "Tanger-Tétouan-Al Hoceïma": 1426,
+      "Rabat-Salé-Kénitra": 1030,
+      "Fès-Meknès": 564,
+      "Souss-Massa": 463,
+      "L'Oriental": 74,
+      "Béni Mellal-Khénifra": 40,
+      "Laâyoune-Sakia El Hamra": 3,
+      "Drâa-Tafilalet": 1
+    },
+    "cities": [
+      {
+        "city": "Casablanca",
+        "listings": 6778,
+        "percent": 50.07,
+        "low_sample": false
+      },
+      {
+        "city": "Marrakech",
+        "listings": 2472,
+        "percent": 18.26,
+        "low_sample": false
+      },
+      {
+        "city": "Tanger",
+        "listings": 1255,
+        "percent": 9.27,
+        "low_sample": false
+      },
+      {
+        "city": "Agadir",
+        "listings": 458,
+        "percent": 3.38,
+        "low_sample": false
+      },
+      {
+        "city": "Rabat",
+        "listings": 400,
+        "percent": 2.95,
+        "low_sample": false
+      },
+      {
+        "city": "Fès",
+        "listings": 314,
+        "percent": 2.32,
+        "low_sample": false
+      },
+      {
+        "city": "Meknès",
+        "listings": 247,
+        "percent": 1.82,
+        "low_sample": false
+      },
+      {
+        "city": "Mohammedia",
+        "listings": 233,
+        "percent": 1.72,
+        "low_sample": false
+      },
+      {
+        "city": "Kénitra",
+        "listings": 231,
+        "percent": 1.71,
+        "low_sample": false
+      },
+      {
+        "city": "Salé",
+        "listings": 205,
+        "percent": 1.51,
+        "low_sample": false
+      },
+      {
+        "city": "Témara",
+        "listings": 191,
+        "percent": 1.41,
+        "low_sample": false
+      },
+      {
+        "city": "El Jadida",
+        "listings": 170,
+        "percent": 1.26,
+        "low_sample": false
+      },
+      {
+        "city": "Tétouan",
+        "listings": 141,
+        "percent": 1.04,
+        "low_sample": false
+      },
+      {
+        "city": "Bouskoura",
+        "listings": 92,
+        "percent": 0.68,
+        "low_sample": false
+      },
+      {
+        "city": "Oujda",
+        "listings": 69,
+        "percent": 0.51,
+        "low_sample": false
+      },
+      {
+        "city": "Berrechid",
+        "listings": 69,
+        "percent": 0.51,
+        "low_sample": false
+      },
+      {
+        "city": "Essaouira",
+        "listings": 68,
+        "percent": 0.5,
+        "low_sample": false
+      },
+      {
+        "city": "Larache",
+        "listings": 27,
+        "percent": 0.2,
+        "low_sample": true
+      },
+      {
+        "city": "Béni Mellal",
+        "listings": 23,
+        "percent": 0.17,
+        "low_sample": true
+      },
+      {
+        "city": "Bouznika",
+        "listings": 20,
+        "percent": 0.15,
+        "low_sample": true
+      },
+      {
+        "city": "Safi",
+        "listings": 18,
+        "percent": 0.13,
+        "low_sample": true
+      },
+      {
+        "city": "Khouribga",
+        "listings": 17,
+        "percent": 0.13,
+        "low_sample": true
+      },
+      {
+        "city": "Settat",
+        "listings": 16,
+        "percent": 0.12,
+        "low_sample": true
+      },
+      {
+        "city": "Tiznit",
+        "listings": 5,
+        "percent": 0.04,
+        "low_sample": true
+      },
+      {
+        "city": "Nador",
+        "listings": 5,
+        "percent": 0.04,
+        "low_sample": true
+      },
+      {
+        "city": "Ifrane",
+        "listings": 3,
+        "percent": 0.02,
+        "low_sample": true
+      },
+      {
+        "city": "Fnidek",
+        "listings": 3,
+        "percent": 0.02,
+        "low_sample": true
+      },
+      {
+        "city": "Laâyoune",
+        "listings": 3,
+        "percent": 0.02,
+        "low_sample": true
+      },
+      {
+        "city": "Khémisset",
+        "listings": 3,
+        "percent": 0.02,
+        "low_sample": true
+      },
+      {
+        "city": "Ouarzazate",
+        "listings": 1,
+        "percent": 0.01,
+        "low_sample": true
+      }
+    ],
+    "low_sample_city_threshold": 30
+  },
+  "feature_audit": {
+    "target": [
+      "price_mad"
+    ],
+    "safe_candidate_features": [
+      "region",
+      "city",
+      "neighborhood_clean",
+      "property_type_repaired",
+      "surface_m2",
+      "bedrooms",
+      "bathrooms",
+      "furnished_status",
+      "parking",
+      "balcony",
+      "sea_view"
+    ],
+    "exclude_from_model": [
+      "price_per_m2",
+      "price_per_m2_original",
+      "price_per_m2_recomputed",
+      "price_raw",
+      "listing_id",
+      "source_listing_id",
+      "url",
+      "canonical_url_repaired",
+      "title_raw",
+      "details_raw",
+      "location_raw",
+      "publication_date",
+      "publication_date_status",
+      "scraped_at",
+      "source_record_path",
+      "validation_status",
+      "validation_reasons",
+      "deduplication_status",
+      "duplicate_of",
+      "duplicate_status_repaired",
+      "duplicate_group_id",
+      "duplicate_match_level",
+      "duplicate_keep",
+      "batch_id",
+      "batch_anomaly_status",
+      "numeric_consistency_status",
+      "outlier_decision",
+      "outlier_reasons",
+      "repair_exclusion_reason"
+    ],
+    "exclusion_rationale": {
+      "target_leakage": [
+        "price_per_m2",
+        "price_per_m2_original",
+        "price_per_m2_recomputed"
+      ],
+      "raw_identifiers_or_traceability": [
+        "listing_id",
+        "source_listing_id",
+        "url",
+        "canonical_url_repaired",
+        "source_record_path"
+      ],
+      "unstructured_raw_evidence": [
+        "title_raw",
+        "details_raw",
+        "location_raw",
+        "price_raw"
+      ],
+      "unavailable_or_temporal_provenance": [
+        "publication_date",
+        "publication_date_status",
+        "scraped_at"
+      ],
+      "quality_control_metadata": [
+        "validation_status",
+        "validation_reasons",
+        "deduplication_status",
+        "duplicate_of",
+        "duplicate_status_repaired",
+        "duplicate_group_id",
+        "duplicate_match_level",
+        "duplicate_keep",
+        "batch_id",
+        "batch_anomaly_status",
+        "numeric_consistency_status",
+        "outlier_decision",
+        "outlier_reasons",
+        "repair_exclusion_reason"
+      ]
+    }
+  },
+  "output_sha256": {
+    "csv": "c8000deb59446b4a4bb99066e2998ba857f65888f6c2958a70d4100d01b1436f",
+    "parquet": "f511687f1604b17804e2c746338557ea66fb9b56d076d9c9944fc1cf33db3079"
+  }
+}

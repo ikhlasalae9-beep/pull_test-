@@ -1,0 +1,592 @@
+neighborhood,count
+unknown,345
+racine,226
+gauthier,194
+gueliz,164
+maarif,155
+centre,143
+maarif extension,130
+les princesses,128
+les hopitaux,124
+californie,123
+palmier,119
+centre ville,111
+agdal,111
+ain diab,111
+oulfa,107
+marjane,103
+triangle d'or,95
+bourgogne ouest,92
+route casablanca,87
+hivernage,86
+roches noires,86
+beausejour,85
+belvedere,85
+sidi maarouf,80
+ain sebaa,76
+riyad,75
+oasis,74
+anfa,73
+hay hassani,71
+ain diab extension,66
+de la plage,60
+la gironde,59
+malabata,57
+val fleury,56
+bourgogne est,54
+casablanca finance city,53
+mhamid,53
+samlalia,51
+hay salam,51
+majorelle,49
+ferme bretonne (hay arraha),47
+mers sultan,46
+hay mohammadi,44
+iberie,43
+hamria,43
+sidi moumen,41
+al qods,40
+ville verte,40
+tanja balia,40
+tanger city center,40
+ennakhil (palmeraie),39
+administratif,37
+boulevard med 6,37
+2 mars,35
+almaz,35
+burger,34
+route de safi,32
+camp al ghoul,32
+medina,31
+nassim 1,31
+hay houda,30
+riviera,30
+ain chock,30
+souissi,30
+bernoussi,28
+castilla,27
+quartier du parc,27
+nouvelle ville,27
+sala el jadida,26
+maamora,24
+wifak,23
+quartier bachkou,23
+route ain chkaf,23
+route immouzer,23
+hay mabrouka,23
+sania,22
+moujahidine,22
+franceville,22
+daoudiat,22
+sidi hajji,21
+rbat asfaa±,21
+mesnana,21
+lissasfa,21
+sidi belyout,21
+gironde,21
+cil (hay salam),20
+ahlane,20
+victoria,20
+mozart,20
+route amizmiz,19
+mimosas,19
+ain borja,18
+al azhar,18
+mandarona,18
+ain mezouar,18
+casablanca marina,18
+hassan - centre ville,18
+mannesmann,18
+al bassatine,18
+hay chmaou,18
+massira 1,17
+derb ghalef,17
+liberte,16
+izdihar,16
+moulay youssef,16
+benjdia,16
+racine extension,16
+l’hivernage,16
+beausite,16
+hay targa,16
+lekrimat,16
+route d'agadir - essaouira,15
+route de ceuta,15
+hermitage,15
+fonciere,15
+wafa,15
+mghogha,15
+nassim,15
+prestigia,15
+route de fez,14
+bir rami est,14
+bir rami ouest,14
+ouasis,14
+hay saada,14
+plateau (al batha),14
+anassi,14
+la ville haute,13
+l'ocean,13
+kouilma,13
+haut agdal,13
+narjis,13
+du golf,13
+secteur touristique,13
+tabriquet,12
+achakar,12
+boukhalef,12
+alsace lorraine,12
+bouaakkaz,12
+hay essalam,12
+derb omar,12
+hay zobir,12
+la siesta,12
+skikina,12
+bel air - val fleuri,12
+haut founty,12
+wilaya,11
+al aalia,11
+haut anza,11
+riad oulad mtaa,11
+route de tahanaout,11
+route de l'ourika,11
+val fleuri,11
+ghazoua,11
+abbadi,11
+bournazil,11
+hay el menzah,10
+ain amiyer,10
+hay dakhla,10
+issil,10
+manar,10
+guich oudaya,10
+bab al bahr,10
+hay almassira 2,10
+les portes de marrakech,10
+aouama gharbia,10
+champ de course,10
+assam,10
+route se sefrou,9
+hay chrifa,9
+route nationale assilah (n1),9
+abattoirs,9
+amelkis,9
+route de ouarzazate,9
+ennajd,9
+tilila,9
+assif,9
+route de rabat,9
+maghreb arabi,8
+azzouzia,8
+mont fleuri,8
+sidi othmane,8
+oued eddahab,8
+amerchich,8
+quartier aerodrome,8
+essaada,8
+cite adrar,8
+casabarata,8
+harhoura,8
+ahl loghlam (hay assalam),8
+anza,8
+hay al fath,8
+zouagha,7
+azib haj kaddour,7
+al osra,7
+hay atlas,7
+port,7
+hay albaraka,7
+jawhara,7
+maghrib arabi,7
+eden island,7
+wislane,7
+hay salama,7
+hay nahda,7
+riad al atlas,7
+derb ben houmane,7
+borj,7
+targa,7
+hay alfadl,6
+el manar - el hank,6
+laymoune,6
+el hadadda,6
+boustane,6
+riad salam,6
+branes 1,6
+port tanger ville,6
+salmia 2,6
+sidi el khadir,6
+aviation - mabella,6
+l'habitat,6
+hay arsalan,6
+al farah dar essalam,6
+abouab sala,6
+al hadika,6
+boukar,6
+zone industrielle oukacha,6
+hay al azhar,6
+hassania 2,6
+aharrarine,6
+al kodia,6
+lazaret,6
+zemmouri,5
+oued fes,5
+nassim 2,5
+oasis sud,5
+lahraouiyine,5
+ville nouvelle,5
+tacharouk (hay al walaa),5
+taboula,5
+hay al farah,5
+oulad wjih,5
+martil,5
+sidi abbad,5
+ziaten,5
+sanaoubar,5
+argana,5
+hay moulay rachid 1,5
+massira 2,5
+tantonville,5
+drissia,5
+sidi moussa,5
+fath el kheir,5
+zone industrielle,5
+al wifaq,5
+amicales,5
+al moustakbal,5
+andalous,5
+finance city,5
+anfa superieur,4
+lusitania,4
+hay sadri,4
+hay al amal,4
+raounak,4
+taddart anza,4
+diour jamaa,4
+ben serguaou,4
+dar el lhamra,4
+souani,4
+fes city center,4
+arset sbaia,4
+zone industrielle mghogha,4
+hanaa 3 - soussi,4
+hay karima,4
+beni touzine,4
+bab ighli,4
+hay riad,4
+hay qods,4
+el manar,4
+bourmana,4
+cgi,4
+la floride,4
+hay bensouda,4
+cherkaoui - marzouka,4
+riad 1,4
+tikiouine,4
+lala hnia hamria,4
+branes 2,4
+hay ach-chbanat,4
+hay el matar,4
+garage allal,4
+la vilette,4
+charaf,3
+hay al hassani,3
+riyad extension,3
+hay lmkansa,3
+dar lamane,3
+jamila 5,3
+horria,3
+al mandar al jamil,3
+hay najah,3
+derb mesfioui,3
+el qods,3
+hay al wafaa,3
+hay alfarah,3
+habbous,3
+al madina aljadida,3
+rachidia,3
+les iris,3
+bab sebta,3
+la colline,3
+hay zitoune,3
+quartier oued fes,3
+smaala,3
+route de meknes,3
+kebibat,3
+quartier du soleil,3
+aida,3
+najmat al janoub,3
+charf,3
+founti,3
+el baraka,3
+derb chorfa,3
+amsernate,3
+hay moulay el kamel,3
+jbel kbir,3
+safi 1,3
+hoda,3
+hay massira,3
+sidi ghanem,2
+derb lfath,2
+fadlallah,2
+riad 2,2
+hay achchabab,2
+hay al bassatine,2
+massira 3,2
+hay al fadl,2
+hay almasjid,2
+mdiq,2
+mkinssia,2
+oliverie,2
+hay rahma,2
+hay firdaouss,2
+branes kdima,2
+zouagha bas,2
+residences — haut anza,2
+lekhiam,2
+riad essalam,2
+zone industrielle moulay rachid,2
+pepiniere,2
+al amal,2
+saada,2
+inara,2
+narjiss,2
+costa,2
+ismalia,2
+azli,2
+hay al kamal,2
+sidi abdellah,2
+hay badr,2
+plateau,2
+al hadiqa,2
+touilaa,2
+hay moulay abdellah,2
+gourziana,2
+hay adil,2
+hay oued dahab,2
+tamouda,2
+bettana,2
+sidi yahya,2
+sidi talha,2
+al boustane,2
+ifriquia,2
+el youssoufia,2
+ben saleh,2
+lalla zahra,2
+riad zitoun,2
+hay al falah,2
+hay inbiat,2
+ancien combatant,2
+biranzarane,2
+zone industrielle agadir,2
+bab lekhmiss,2
+derb loubila,2
+al adarissa,2
+taddart,2
+derb tolba,2
+hay idrissia,2
+benkirane,2
+el qaria,2
+al irfane,2
+tghat,2
+dyour el ghaba,2
+andalousse,2
+msala,2
+marchan,2
+hay chifa,2
+el majd,2
+hay annahda,2
+extension dakhla,2
+hay ez zaitoune,2
+bel air,1
+premium village,1
+lazrak,1
+la palmeraie,1
+cote de la gare,1
+derb korea,1
+touabel,1
+hay kassam,1
+bir chifa,1
+hay zitoun,1
+al hassania,1
+ain noqbi,1
+hay arrahma,1
+hay smara,1
+nahda,1
+vis a agdal,1
+dher lahmam,1
+hay al wifaq,1
+alia,1
+el haj el mokhtar,1
+plage dahomey,1
+bella vista,1
+wad el bacha,1
+diour dokala,1
+ain el hayani,1
+beni makada lakdima,1
+golf city,1
+grand boulevard ahfir,1
+vourgogne,1
+l’exploitation des le premier jour,1
+sakani,1
+prestigia agate,1
+bd allal el fassi,1
+belbekkar,1
+zone industrielle saniat sbihi,1
+hay el qods,1
+hay ouifak,1
+hay moulay rachid 6,1
+hay ennasr,1
+hay al kora,1
+polo,1
+prestigia golf city,1
+lalla chafia,1
+laayoun,1
+derb salama,1
+el ensanche,1
+al ahd al jadid,1
+cite portugaise,1
+ennasr,1
+iziki,1
+sidi bouzekri,1
+abi horaira,1
+hay yasmina,1
+cheminoits,1
+hay chabab,1
+hay gryou,1
+vinci,1
+hay palestine,1
+boutaaa,1
+hay mesk lil,1
+derb al madania,1
+touilaa foqia,1
+quartier cheminots,1
+townhouse for sale,1
+hay nour,1
+dahomey golf beach,1
+hay alfoqara,1
+hassania 1,1
+el mdrassi,1
+derb milan (hay omar bnou alkhattab),1
+cite des cadres - saniat al mourakib,1
+hay annassim,1
+le domaine d'anfa,1
+hay al bahja,1
+islane,1
+hay dalia,1
+ghrablia,1
+el khair 1,1
+hay moulay rachid 5,1
+cabo negro,1
+temara plage,1
+laver,1
+ouled moussa,1
+lharya,1
+hay raha,1
+mister khouch,1
+hay almassira 1,1
+el hara,1
+sidi ben slimane el jazouli,1
+hay almassira 3,1
+hay inara,1
+bab ghmat,1
+riad el ali,1
+riad isli,1
+sour jdid,1
+hay al rajaa fillah,1
+dar touzani,1
+boujdade,1
+vilette,1
+les orangers,1
+le quartier semlalia,1
+saisir veri immo,1
+derb khalid,1
+salmia 1,1
+el massira,1
+dar assalam,1
+bab lhmar,1
+kasbah,1
+hay el boughaz,1
+avenue al hamra,1
+hay lalla soukaina,1
+tenoukchet,1
+fnideq,1
+mellah,1
+zone industrielle ain chkef,1
+el mrabet,1
+artisanat,1
+hay sinaai,1
+founty,1
+terre de luxe a l'hivernage,1
+yasmina,1
+jawhar,1
+le quartier de riyad salam,1
+ancienne medina,1
+zitoune,1
+sehrij gnawa,1
+la pergola,1
+madwaz,1
+bab doukkala,1
+hay alhoda,1
+rbat aala,1
+selouane,1
+louer,1
+lot rida,1
+rmila,1
+star hill,1
+el inara,1
+vis oasis,1
+mabroka,1
+hay m'barka,1
+al karaouiyine,1
+jbilat,1
+quartier administratif,1
+bouargane,1
+hay laayoune,1
+hay tarik 2,1
+hay haddaouia,1
+bir el ghazi,1
+al kamra,1
+diour chouhada,1
+michouar,1
+kennaria,1
+andalouss,1
+roustal,1
+route d'agadir,1
+jirrari,1
+laaouina,1
+la cgi,1
+saniat errmel,1
+arset ben chebli,1
+hay bassma,1
+inbiaat,1
+hassania 3,1
+hay saada 1,1
+bouhout 1,1
+derb sid daoui,1
+miamar,1
+lot almouna,1
+messrour 2,1
+sidi youssef,1
+hay antaria,1
+cite militaire,1
+corniche,1
+cote du plaza,1
+zawiyat sidi wassel,1
+victor hugo,1
+masrou 1,1
+argan golf prestigia,1
+el keddan,1
+annouzha,1
+firdaouss,1
+marina,1
+hay nassim,1
+rmilat,1
+hay fath,1
+el moukef,1
+le quartier mabrouka,1
+msalla,1
+najd,1
+el bradaa,1
+hay rmila,1
+illigh,1

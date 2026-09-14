@@ -1,0 +1,146 @@
+{
+  "mode": "PILOT",
+  "summary": {
+    "total_raw_listings": 500,
+    "total_normalized": 500,
+    "total_valid": 309,
+    "total_warnings": 108,
+    "total_rejected": 83,
+    "total_duplicates": 15,
+    "total_modeling_rows": 410,
+    "number_of_sources": 1,
+    "number_of_regions": 11,
+    "number_of_cities": 32,
+    "number_of_neighborhoods": 202,
+    "median_price_mad": 1300000.0,
+    "median_surface_m2": 99.5,
+    "median_price_per_m2": 12524.130000000001,
+    "largest_city_share_percent": 12.2
+  },
+  "missing_percent": {
+    "publication_date": 100.0,
+    "url": 72.93,
+    "source_listing_id": 72.93,
+    "city": 0.0,
+    "neighborhood": 17.8,
+    "surface_m2": 0.0,
+    "price_mad": 0.0,
+    "bedrooms": 0.49,
+    "bathrooms": 0.0,
+    "latitude": 100.0,
+    "longitude": 100.0
+  },
+  "distributions": {
+    "source": {
+      "mubawab.ma": 410
+    },
+    "region": {
+      "Casablanca-Settat": 121,
+      "Rabat-Salé-Kénitra": 68,
+      "Tanger-Tétouan-Al Hoceïma": 62,
+      "Marrakech-Safi": 56,
+      "Fès-Meknès": 36,
+      "Souss-Massa": 27,
+      "L'Oriental": 17,
+      "Béni Mellal-Khénifra": 15,
+      "Laâyoune-Sakia El Hamra": 4,
+      "Dakhla-Oued Ed-Dahab": 3,
+      "Drâa-Tafilalet": 1
+    },
+    "city": {
+      "Casablanca": 50,
+      "Marrakech": 41,
+      "Tanger": 31,
+      "Rabat": 24,
+      "Agadir": 21,
+      "El Jadida": 20,
+      "Mohammedia": 20,
+      "Fès": 18,
+      "Témara": 15,
+      "Kénitra": 15,
+      "Oujda": 12,
+      "Tétouan": 12,
+      "Meknès": 11,
+      "Salé": 9,
+      "Settat": 9,
+      "Béni Mellal": 8,
+      "Essaouira": 8,
+      "Berrechid": 8,
+      "Al Hoceïma": 7,
+      "Safi": 7,
+      "Bouskoura": 7,
+      "Khouribga": 7,
+      "Dar Bouazza": 7,
+      "Ifrane": 7,
+      "Larache": 6,
+      "Tiznit": 6,
+      "Chefchaouen": 6,
+      "Khémisset": 5,
+      "Nador": 5,
+      "Laâyoune": 4,
+      "Dakhla": 3,
+      "Ouarzazate": 1
+    },
+    "property_type": {
+      "appartement": 195,
+      "duplex": 60,
+      "studio": 40,
+      "maison": 38,
+      "villa": 29,
+      "immeuble": 25,
+      "terrain": 6,
+      "riad": 6,
+      "bureau": 5,
+      "local commercial": 4,
+      "magasin": 2
+    },
+    "publication_date_status": {
+      "unavailable": 410
+    },
+    "validation_status": {
+      "valid": 309,
+      "warning": 108,
+      "rejected": 83
+    },
+    "deduplication_status": {
+      "unique": 485,
+      "duplicate_listing_id": 8,
+      "duplicate_fingerprint": 7
+    }
+  },
+  "source_statuses": {
+    "mubawab_authorized_feed": "disabled",
+    "agenz_authorized_feed": "disabled",
+    "sarouty_authorized_feed": "disabled",
+    "preserved_local_evidence": "loaded:25433:elapsed_seconds=0.39"
+  },
+  "publication_date_by_source": {
+    "mubawab.ma": {
+      "rows": 410,
+      "available": 0,
+      "available_percent": 0.0,
+      "status_counts": {
+        "unavailable": 410
+      }
+    }
+  },
+  "acceptance_checks": {
+    "A_unique_listing_id": true,
+    "B_sale_only": true,
+    "C_price_present": true,
+    "D_surface_large_majority": true,
+    "E_city_present": true,
+    "F_region_present": true,
+    "G_property_not_hardcoded": true,
+    "H_publication_date_retrieved": false,
+    "I_neighborhood_no_fragments": true,
+    "J_city_balanced": true,
+    "K_several_property_types": true,
+    "L_several_regions": true,
+    "M_traceability_majority": false,
+    "pilot_multiple_sources": false,
+    "pilot_size_300_to_1000": true,
+    "checkpoint_resume_tested": true
+  },
+  "pilot_passed": false
+}

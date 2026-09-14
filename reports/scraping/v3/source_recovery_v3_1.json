@@ -1,0 +1,210 @@
+{
+  "phase": "V3.1 SOURCE RECOVERY",
+  "audited_at": "2026-09-04",
+  "decision": "READY_FOR_FAST = NO",
+  "accepted_sources": [],
+  "conditionally_shortlisted_sources": [
+    {
+      "rank": 1,
+      "source": "Marsad Immo",
+      "score_out_of_40": 37,
+      "estimated_useful_volume": "512,847 indexed listings claimed; 75 cities",
+      "condition": "Enterprise API/export agreement must explicitly permit listing-level use for internal modeling and retain ID or URL"
+    },
+    {
+      "rank": 2,
+      "source": "marocain.investments",
+      "score_out_of_40": 35,
+      "estimated_useful_volume": "24,767 records reported by the public search API on 2026-09-04",
+      "condition": "Written exception or licensed export is required because current terms prohibit derivative datasets/products"
+    },
+    {
+      "rank": 3,
+      "source": "Groupe Al Omrane",
+      "score_out_of_40": 28,
+      "estimated_useful_volume": "521 nationwide project pages reported by the catalogue",
+      "condition": "Authorized structured export plus evidence that unit-level price and surface satisfy V3.1 gates"
+    }
+  ],
+  "candidate_access_audit": [
+    {
+      "source": "Marsad Immo",
+      "homepage": "https://marsadimmo.com/",
+      "access_mechanism": "Contracted Enterprise API or provider CSV export",
+      "robots_status": "Public catalogue is reference/search accessible; /api/ is disallowed and the robots policy does not grant dataset reuse",
+      "terms_or_reuse_restriction": "CGU prohibits mass extraction and redistribution without authorization",
+      "automated_collection_permitted": "contract_only",
+      "prior_authorization_required": true,
+      "technical_accessibility": "Public product pages reachable; structured delivery is advertised for Enterprise customers",
+      "estimated_useful_listing_volume": "512,847 indexed listings and 75 cities claimed by provider",
+      "decision": "conditional_license_required"
+    },
+    {
+      "source": "marocain.investments",
+      "homepage": "https://marocain.investments/",
+      "access_mechanism": "Public JSON search API or a separately licensed export",
+      "robots_status": "Public catalogue/API discovery was technically allowed except internal API routes",
+      "terms_or_reuse_restriction": "Terms sections 9-10 prohibit bulk extraction and creating or redistributing a derivative dataset/product",
+      "automated_collection_permitted": "no_for_requested_dataset_under_current_terms",
+      "prior_authorization_required": true,
+      "technical_accessibility": "Public endpoint returned stable IDs, URLs, price, city, district, type, surface, and first-seen values",
+      "estimated_useful_listing_volume": "24,767 records reported by the public endpoint on audit date",
+      "decision": "rejected_current_terms"
+    },
+    {
+      "source": "Groupe Al Omrane",
+      "homepage": "https://www.alomrane.gov.ma/",
+      "access_mechanism": "First-party project catalogue or an authorized structured export",
+      "robots_status": "Public project pages accessible; some commercial download routes are restricted",
+      "terms_or_reuse_restriction": "No open listing-data reuse licence was located",
+      "automated_collection_permitted": "not_established",
+      "prior_authorization_required": true,
+      "technical_accessibility": "HTML catalogue reachable, but unit-level price/surface completeness is unverified",
+      "estimated_useful_listing_volume": "521 project pages reported by catalogue",
+      "decision": "conditional_authorized_export_required"
+    },
+    {
+      "source": "Yakeey",
+      "homepage": "https://yakeey.com/",
+      "access_mechanism": "Public sale catalogue HTML",
+      "robots_status": "Public pages were reachable; robots accessibility was not treated as a reuse licence",
+      "terms_or_reuse_restriction": "CGU Article 12 prohibits extracting, compiling, sharing, or exploiting platform content",
+      "automated_collection_permitted": "no",
+      "prior_authorization_required": true,
+      "technical_accessibility": "Structured and traceable public listings",
+      "estimated_useful_listing_volume": "2,377 sale properties reported on audit date",
+      "decision": "rejected_terms"
+    },
+    {
+      "source": "360annonces",
+      "homepage": "https://www.360annonces.com/",
+      "access_mechanism": "Public sale catalogue HTML",
+      "robots_status": "Public pages accessible; /api is disallowed",
+      "terms_or_reuse_restriction": "General conditions prohibit collecting data without authorization",
+      "automated_collection_permitted": "no_without_authorization",
+      "prior_authorization_required": true,
+      "technical_accessibility": "Public cards expose price, surface, city, type, and listing links",
+      "estimated_useful_listing_volume": "515 sale properties reported on audit date",
+      "decision": "rejected_terms"
+    },
+    {
+      "source": "Lesiteimmo API",
+      "homepage": "https://api.lesiteimmo.com/doc",
+      "access_mechanism": "Documented subscription REST/JSON API",
+      "robots_status": "API documentation available; access is credentialed rather than a public crawl",
+      "terms_or_reuse_restriction": "API key/subscription required and downstream dataset rights must be confirmed in the contract",
+      "automated_collection_permitted": "subscription_only",
+      "prior_authorization_required": true,
+      "technical_accessibility": "Stable structured fields, but no Moroccan inventory was established",
+      "estimated_useful_listing_volume": "Unknown for Morocco",
+      "decision": "rejected_morocco_inventory_unverified_and_key_required"
+    },
+    {
+      "source": "data.gov.ma",
+      "homepage": "https://www.data.gov.ma/",
+      "access_mechanism": "Public CKAN API and downloadable open datasets",
+      "robots_status": "Official API guide permits API discovery/access",
+      "terms_or_reuse_restriction": "Portal datasets are generally offered under ODbL subject to dataset metadata",
+      "automated_collection_permitted": "yes_for_appropriately_licensed_datasets",
+      "prior_authorization_required": false,
+      "technical_accessibility": "API reachable, but no current listing-level sale dataset was found",
+      "estimated_useful_listing_volume": "0 qualifying listing observations found",
+      "decision": "reference_only_no_listing_rows"
+    },
+    {
+      "source": "Kaggle housing-data-in-morocco",
+      "homepage": "https://www.kaggle.com/datasets/yassinesadiki/housing-data-in-morocco",
+      "access_mechanism": "Downloadable CSV",
+      "robots_status": "Dataset obtained through Kaggle's supported download mechanism, not page scraping",
+      "terms_or_reuse_restriction": "Metadata says Other; the description contains no explicit reuse grant or source provenance",
+      "automated_collection_permitted": "download_permitted_but_modeling_reuse_unclear",
+      "prior_authorization_required": true,
+      "technical_accessibility": "4,675-row CSV was readable but contains neither source URL nor native listing ID",
+      "estimated_useful_listing_volume": "0 rows satisfy V3.1 traceability; 4,675 rows physically present",
+      "decision": "rejected_license_and_traceability"
+    },
+    {
+      "source": "AnnoncesMaroc",
+      "homepage": "https://www.annoncesmaroc.ma/",
+      "access_mechanism": "Public marketplace HTML",
+      "robots_status": "Reference/search access signal only; AI training signal is negative",
+      "terms_or_reuse_restriction": "Database/content rights are reserved and copying is limited to personal single-computer use",
+      "automated_collection_permitted": "no_reuse_grant",
+      "prior_authorization_required": true,
+      "technical_accessibility": "Public pages reachable; qualifying volume not established",
+      "estimated_useful_listing_volume": "Unknown",
+      "decision": "rejected_terms_and_content_signal"
+    },
+    {
+      "source": "OpenSooq Morocco",
+      "homepage": "https://ma.opensooq.com/",
+      "access_mechanism": "Public marketplace HTML",
+      "robots_status": "API and multiple search/query routes are disallowed",
+      "terms_or_reuse_restriction": "Terms expressly prohibit robots, spiders, scraping, and data mining",
+      "automated_collection_permitted": "no",
+      "prior_authorization_required": true,
+      "technical_accessibility": "Public site reachable, but automated collection is contractually excluded",
+      "estimated_useful_listing_volume": "Unknown",
+      "decision": "rejected_terms"
+    },
+    {
+      "source": "1immo",
+      "homepage": "https://1immo.ma/",
+      "access_mechanism": "Public listing HTML",
+      "robots_status": "No robots signal was treated as affirmative reuse permission",
+      "terms_or_reuse_restriction": "Protected content is limited to personal use; no extraction grant was found",
+      "automated_collection_permitted": "not_established",
+      "prior_authorization_required": true,
+      "technical_accessibility": "Public pages reachable; qualifying national volume not established",
+      "estimated_useful_listing_volume": "Unknown",
+      "decision": "rejected_personal_use_only"
+    },
+    {
+      "source": "Third-party scraper APIs",
+      "homepage": "https://apify.com/",
+      "access_mechanism": "Paid hosted scrapers/APIs such as Apify, Parse.bot, and PropAPIS",
+      "robots_status": "Varies by upstream portal and cannot be cured by the intermediary",
+      "terms_or_reuse_restriction": "Vendor access does not establish rights to extract or reuse upstream portal listings",
+      "automated_collection_permitted": "not_established_for_upstream_content",
+      "prior_authorization_required": true,
+      "technical_accessibility": "Potentially fast and structured, but legally insufficient for this dataset",
+      "estimated_useful_listing_volume": "Potentially large but unusable absent upstream rights",
+      "decision": "rejected_upstream_rights_not_established"
+    }
+  ],
+  "candidate_scores": [
+    {"rank": 1, "source": "Marsad Immo", "access_reuse": 2, "morocco_coverage": 5, "sale_volume": 5, "structured_quality": 5, "traceability": 5, "geographic_diversity": 5, "property_type_diversity": 5, "collection_speed": 5, "total": 37, "status": "conditional_license_required"},
+    {"rank": 2, "source": "marocain.investments", "access_reuse": 2, "morocco_coverage": 5, "sale_volume": 4, "structured_quality": 5, "traceability": 5, "geographic_diversity": 5, "property_type_diversity": 4, "collection_speed": 5, "total": 35, "status": "rejected_current_terms"},
+    {"rank": 3, "source": "Groupe Al Omrane", "access_reuse": 2, "morocco_coverage": 5, "sale_volume": 2, "structured_quality": 2, "traceability": 5, "geographic_diversity": 5, "property_type_diversity": 4, "collection_speed": 3, "total": 28, "status": "conditional_authorized_export_required"},
+    {"rank": 4, "source": "Yakeey", "access_reuse": 0, "morocco_coverage": 4, "sale_volume": 3, "structured_quality": 4, "traceability": 5, "geographic_diversity": 4, "property_type_diversity": 5, "collection_speed": 3, "total": 28, "status": "rejected_terms"},
+    {"rank": 5, "source": "360annonces", "access_reuse": 0, "morocco_coverage": 3, "sale_volume": 2, "structured_quality": 4, "traceability": 5, "geographic_diversity": 3, "property_type_diversity": 5, "collection_speed": 4, "total": 26, "status": "rejected_terms"},
+    {"rank": 6, "source": "Lesiteimmo API", "access_reuse": 3, "morocco_coverage": 1, "sale_volume": 1, "structured_quality": 5, "traceability": 5, "geographic_diversity": 1, "property_type_diversity": 4, "collection_speed": 5, "total": 25, "status": "rejected_morocco_inventory_unverified_and_key_required"},
+    {"rank": 7, "source": "data.gov.ma", "access_reuse": 5, "morocco_coverage": 4, "sale_volume": 0, "structured_quality": 3, "traceability": 4, "geographic_diversity": 4, "property_type_diversity": 0, "collection_speed": 5, "total": 25, "status": "reference_only_no_listing_rows"},
+    {"rank": 8, "source": "Kaggle housing-data-in-morocco", "access_reuse": 1, "morocco_coverage": 2, "sale_volume": 3, "structured_quality": 4, "traceability": 0, "geographic_diversity": 2, "property_type_diversity": 3, "collection_speed": 5, "total": 20, "status": "rejected_license_and_traceability"},
+    {"rank": 9, "source": "AnnoncesMaroc", "access_reuse": 0, "morocco_coverage": 3, "sale_volume": 2, "structured_quality": 2, "traceability": 4, "geographic_diversity": 3, "property_type_diversity": 4, "collection_speed": 3, "total": 21, "status": "rejected_terms_and_content_signal"},
+    {"rank": 10, "source": "OpenSooq Morocco", "access_reuse": 0, "morocco_coverage": 3, "sale_volume": 3, "structured_quality": 4, "traceability": 5, "geographic_diversity": 3, "property_type_diversity": 4, "collection_speed": 1, "total": 23, "status": "rejected_terms"},
+    {"rank": 11, "source": "1immo", "access_reuse": 0, "morocco_coverage": 2, "sale_volume": 2, "structured_quality": 3, "traceability": 4, "geographic_diversity": 2, "property_type_diversity": 4, "collection_speed": 3, "total": 20, "status": "rejected_personal_use_only"},
+    {"rank": 12, "source": "Third-party scraper APIs", "access_reuse": 0, "morocco_coverage": 4, "sale_volume": 4, "structured_quality": 4, "traceability": 5, "geographic_diversity": 4, "property_type_diversity": 4, "collection_speed": 4, "total": 29, "status": "rejected_upstream_rights_not_established"}
+  ],
+  "micro_pilots": [],
+  "micro_pilot_reason": "No candidate cleared the legal/access gate, so collecting 100-300 records would have contradicted the conservative-access requirement.",
+  "manual_samples": [],
+  "traceability_gate_percent": 90,
+  "publication_date_is_blocking": false,
+  "previous_evidence_recovery": {
+    "mixed_into_v3_1": false,
+    "modeling_rows": 410,
+    "source": "mubawab.ma",
+    "source_and_url_or_id_percent": 27.07,
+    "url_percent": 27.07,
+    "source_listing_id_percent": 27.07,
+    "publication_date_percent": 0.0,
+    "conclusion": "Useful only as separately preserved historical evidence; it fails the V3.1 traceability gate."
+  },
+  "recommended_fast": {
+    "launch_now": false,
+    "conditional_target": 20000,
+    "condition": "At least one contracted/authorized source must first pass a 100-300 row micro-pilot with 90% traceability and the core field gates.",
+    "estimated_runtime_after_authorization": "Approximately 3-10 minutes for a structured API/feed, excluding provider delivery latency; re-estimate from measured micro-pilot throughput."
+  }
+}
