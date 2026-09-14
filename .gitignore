@@ -1,0 +1,75 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+.conda/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Local environment files
+.env
+.env.*
+
+# Operating systems and editors
+.DS_Store
+Thumbs.db
+
+# Local crawler runtime state and failure logs
+data/raw/.mubawab-rate-limit.json
+data/raw/maisonlux_scrapy_failures_v3.jsonl
+
+# Generated data products and recoverable archives
+data/raw/*.csv
+data/raw/*.xlsx
+data/raw/*.parquet
+data/raw/html_snapshots*/
+data/raw/v3/**
+data/checkpoints/**
+data/interim/**
+data/processed/*.csv
+data/processed/*.xlsx
+data/processed/*.parquet
+data/external/geography_sources/
+data/external/recovery_archive/
+data/geographic/*.geojson
+data/geographic/*.json
+reports/scraping/*_detail.csv
+outputs/
+
+# Local model-training caches and large candidate binaries
+ml/.cache/
+ml/artifacts/*.joblib
+ml/artifacts/*.cbm
+ml/artifacts/*checkpoint*
+reports/model/*checkpoint*
+*.optuna.db
+*.sqlite3
+
+# Temporary crawler/debug logs
+logs/
+scrapy.log
+*.scrapy.log
+
+# Temporary/export inspection artifacts
+*.inspect.ndjson
+*.tmp
+*.temp
+*.bak
+
+!data/**/.gitkeep
+!data/sample/
+!data/sample/*.csv
+!data/sample/README.md
+
+# Node / Next.js
+node_modules/
+**/node_modules/
+
+.next/
+**/.next/
+
+!data/processed/maisondelux_model_ready_v1.csv
+*.tsbuildinfo

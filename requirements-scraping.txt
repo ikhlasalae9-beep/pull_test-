@@ -1,0 +1,2 @@
+scrapy>=2.12,<3
+# Legacy adapter tests only. Live portal collection remains policy-disabled.
